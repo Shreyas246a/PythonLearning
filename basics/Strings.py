@@ -24,3 +24,4 @@ print(str3.isdigit())
 print(str5.isalnum())
 print(str2.startswith("Python"))
 print(str2.endswith("programming"))
+
