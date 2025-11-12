@@ -1,17 +1,26 @@
+# No arguments + No return value
+def sqr():
+    num = 1
+    print(num * num)
 
-def greet_user(name,city,age):
-    print(f"Hello, {name}! You are {age} years old and live in {city}.")
+sqr() #1
 
+# No arguments + return value
+def sqr():
+    num = 2
+    return num * num
 
-greet_user("Alice","New York",30)   
-greet_user("Bob","Los Angeles",25)
-greet_user("Charlie","Chicago",35)
+print(sqr()) #4
 
+# arguments + no return value
+def sqr(num):
+    print(num * num)
 
-def area_of_rectangle(length=1, width=1):
-    return length * width
+sqr(3) #9
 
-input_length = float(input("Enter the length of the rectangle: "))
-input_width = float(input("Enter the width of the rectangle: "))
-area = area_of_rectangle(input_length, input_width)
-print(f"The area of the rectangle is: {area}")
+# arguments + return value
+def sqr(num):
+    return num * num
+
+res = sqr(10)
+print(res) #100
