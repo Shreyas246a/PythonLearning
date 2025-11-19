@@ -5,3 +5,4 @@ str = "Hello, World!"
 print('H' in str)     # True
 print('z' not in str) # True
 print((1, 2) in [(1, 2), (3, 4)])  # True
+  # True
