@@ -14,17 +14,13 @@ print(stu_info)
 
 stu_info["age"] = 21
 print(stu_info) 
-
 del stu_info["age"]
 print(stu_info)
 stu_info.popitem() #deletes last item
 print(stu_info)
-
 #length
 print(len(stu_info))
 print(stu_info.__len__())
-
-
 
 print(stu_info.keys())
 print(stu_info.values())
@@ -55,7 +51,8 @@ print(type(tup3))
 print(tup3.__len__())
 print(tup3)
 
-print()
+for i in tup3:
+    print(i)
 
 
 set1 = set()
@@ -68,9 +65,7 @@ print(set2.__len__())
 print(type(set3))
 print(set3.__len__())
 print(set3)
-
-
-print()
+print(sorted(set3))
 
 
 dict1 = {}
@@ -83,3 +78,7 @@ print(dict2.__len__())
 print(type(dict3))
 print(dict3.__len__())
 print(dict3)
+
+
+for item in dict3.items():
+    print(item[0]+ " " +str(item[1]))
